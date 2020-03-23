@@ -4,7 +4,7 @@ node {
    }
    
    stage('Build'){
-      withMaven(maven: 'M3') {
+      withEnv(maven: 'maven3') {
          sh "mvn -B -DskipTests clean package"
       }
    }
