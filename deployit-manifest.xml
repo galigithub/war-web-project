@@ -3,7 +3,7 @@
  <application />
  <deployables>
   <!--<jee.War name="/wwp" file="/target/wwp-1.0.0.war"/>-->
-  <jee.War name="WarWebProject" file="/target/wwp.war" />
+  <jee.War name="WarWebProject" file="wwp.war" />
  </deployables>
  <dependencyResolution>LATEST</dependencyResolution>
  <undeployDependencies>false</undeployDependencies>
