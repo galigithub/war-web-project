@@ -3,6 +3,12 @@ node {
       git url: 'https://github.com/galigithub/war-web-project'
    }
    
+   stage('Build'){
+      withMaven(maven: 'M3') {
+         sh "mvn -B -DskipTests clean package"
+      }
+   }
+   
    /*stage('Build') {
       sh 'mvn -B -DskipTests clean package'
    }*/
