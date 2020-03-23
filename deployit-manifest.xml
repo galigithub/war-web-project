@@ -2,7 +2,7 @@
 <udm.DeploymentPackage version="1.0.0" application="wwp">
  <application />
  <deployables>
-  <jee.War name="/wwp" file="/libs/wwp.war"/>
+  <jee.War name="/wwp" file="/target/wwp-1.0.0.war"/>
  </deployables>
  <dependencyResolution>LATEST</dependencyResolution>
  <undeployDependencies>false</undeployDependencies>
