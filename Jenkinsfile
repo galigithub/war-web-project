@@ -1,15 +1,11 @@
-node {
-   tools {
-      maven 'M3'
-   }
-   
+node {   
    stage('Checkout') {
-      checkout scm
+      git url: 'https://github.com/galigithub/war-web-project'
    }
    
-   stage('Build') {
+   /*stage('Build') {
       sh 'mvn -B -DskipTests clean package'
-   }
+   }*/
    
    stage('Package') {
       xldCreatePackage artifactsPath: 'build/libs', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
