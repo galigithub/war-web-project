@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<udm.DeploymentPackage version="1.0.0" application="wwp">
+<udm.DeploymentPackage version="1.0.0" application="SamplWebApp">
  <application />
  <deployables>
   <jee.War name="/wwp" file="/target/wwp-1.0.0.war"/>
