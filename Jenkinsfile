@@ -15,7 +15,7 @@ node {
    }*/
    
    stage('Package') {
-      xldCreatePackage artifactsPath: 'build/libs', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
+      xldCreatePackage artifactsPath: 'target/', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
    }
    /*
    stage('Deploy') {
