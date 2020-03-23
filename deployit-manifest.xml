@@ -3,6 +3,7 @@
  <application />
  <deployables>
   <jee.War name="/wwp" file="/libs/wwp.war"/>
+ </deployables>
  <dependencyResolution>LATEST</dependencyResolution>
  <undeployDependencies>false</undeployDependencies>
 </udm.DeploymentPackage>
