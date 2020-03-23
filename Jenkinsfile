@@ -3,6 +3,12 @@ node {
       checkout scm
    }
    
+   stage('Build') {
+      steps {
+         sh 'mvn -B -DskipTests clean package'
+      }
+   }
+   
    stage('Package') {
       xldCreatePackage artifactsPath: 'build/libs', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
    }
