@@ -5,7 +5,7 @@ node {
    
    stage('Build'){
       def maven_version = 'maven3'
-      withEnv(["PATH+MAVEN=${tool mvn_version}/bin"]) {
+      withEnv(["PATH+MAVEN=${tool maven_version}/bin"]) {
          sh "mvn -B -DskipTests clean package"
       }
    }
