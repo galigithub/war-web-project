@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<udm.DeploymentPackage version="$BUILD_NUMBER.0" application="war-web-project">
- <deployables>
-  <!--<jee.War name="/wwp" file="/target/wwp-1.0.0.war"/>-->
-  <jee.War name="WarWebProject" file="/target/wwp-1.0.0.war" />
- </deployables>
-<!-- <dependencyResolution>LATEST</dependencyResolution>
- <undeployDependencies>false</undeployDependencies>-->
+<udm.DeploymentPackage version="sampleWar" application="warapp">
+  <application />
+  <orchestrator />
+  <deployables>
+    <tomcat.War name="/samplewarapp" file="/samplewarapp/SampleWebApp.war">
+      <tags />
+      <scanPlaceholders>false</scanPlaceholders>
+      <preScannedPlaceholders>true</preScannedPlaceholders>
+      <placeholders />
+      <checksum>b659bb18654f2f35cdb9734e0452f927e690086c71e576a68e746e83fbd8374c</checksum>
+      <contextRoot>/samplapp</contextRoot>
+    </tomcat.War>
+  </deployables>
+  <applicationDependencies />
+  <dependencyResolution>LATEST</dependencyResolution>
+  <undeployDependencies>false</undeployDependencies>
+  <templates />
+  <boundTemplates />
 </udm.DeploymentPackage>
