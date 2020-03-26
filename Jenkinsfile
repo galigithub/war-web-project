@@ -21,7 +21,7 @@ node {
    
    stage('Deploy') {
       //xldDeploy serverCredentials: 'tomcat', environmentId: 'Environments/Dev', packageId: 'Applications/<project_name>/$BUILD_NUMBER.0'
-      xldDeploy environmentId: 'Environments/Dev/sampleEnv', packageId: 'Applications/DevApp/warapp', serverCredentials: 'Admin-credentials'
+      xldDeploy environmentId: 'Environments/Dev/sampleEnv', packageId: 'Applications/DevApp/warapp/sampleWar', serverCredentials: 'Admin-credentials'
    }  
    
    
