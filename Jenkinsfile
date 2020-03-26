@@ -18,11 +18,12 @@ node {
       //xldCreatePackage artifactsPath: 'target/*.war', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
       xldCreatePackage artifactsPath: 'target', darPath: 'myapp.dar', manifestPath: 'deployit-manifest.xml'
    }
-   /*
+   
    stage('Deploy') {
-      xldDeploy serverCredentials: 'tomcat', environmentId: 'Environments/Dev', packageId: 'Applications/<project_name>/$BUILD_NUMBER.0'
+      //xldDeploy serverCredentials: 'tomcat', environmentId: 'Environments/Dev', packageId: 'Applications/<project_name>/$BUILD_NUMBER.0'
+      xldDeploy environmentId: 'Environments/Dev/sampleEnv', packageId: 'Applications/DevApp/warapp', serverCredentials: 'Admin-credentials'
    }  
-   */
+   
    
    /*
    stage('Package') {  
