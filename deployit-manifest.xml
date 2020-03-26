@@ -3,7 +3,7 @@
   <application />
   <orchestrator />
   <deployables>
-    <tomcat.War name="/samplewarapp" file="/samplewarapp/SampleWebApp.war">
+    <tomcat.War name="/samplewarapp" file="/SampleWebApp-1.0.0">
       <tags />
       <scanPlaceholders>false</scanPlaceholders>
       <preScannedPlaceholders>true</preScannedPlaceholders>
