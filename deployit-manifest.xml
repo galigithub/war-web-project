@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <udm.DeploymentPackage version="sampleWar" application="warapp">
   <application />
-  <orchestrator />
+  <orchestrator>
+    <value>parallel-by-deployed</value>
+  </orchestrator>
   <deployables>
     <tomcat.War name="/samplewarapp" file="/SampleWebApp-1.0.0">
       <tags />
