@@ -11,7 +11,7 @@ node {
    }
    
    stage('Nexus push'){
-      nexusPublisher nexusInstanceId: 'mynexus3', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/SampleWebApp-1.0.0.war']], mavenCoordinate: [artifactId: 'sample', groupId: 'com.sh.test', packaging: 'war', version: '1.0']]]
+      nexusPublisher nexusInstanceId: 'mynexus3', nexusRepositoryId: 'maven-snapshots', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/SampleWebApp-1.0.0.war']], mavenCoordinate: [artifactId: 'sample', groupId: 'com.sh.test', packaging: 'war', version: '1.0']]]
    }
    
    /*stage('Build') {
