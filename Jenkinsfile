@@ -12,7 +12,7 @@ node {
    
    stage('Nexus push'){
       /*nexusPublisher nexusInstanceId: 'mynexus3', nexusRepositoryId: 'maven-snapshots', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/SampleWebApp-1.0.0.war']], mavenCoordinate: [artifactId: 'sample', groupId: 'com.sh.test', packaging: 'war', version: '1.0']]]*/
-      nexusArtifactUploader artifacts: [[artifactId: 'myapp', classifier: '', file: '', type: 'war']], credentialsId: 'admin123456', groupId: 'com.sh', nexusUrl: '173.255.116.180:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snapshots', version: '1.0'
+      nexusArtifactUploader artifacts: [[artifactId: 'myapp', classifier: '', file: 'target/SampleWebApp-1.0.0', type: 'war']], credentialsId: 'admin123456', groupId: 'com.sh', nexusUrl: '173.255.116.180:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snapshots', version: '1.0'
    }
    
    /*stage('Build') {
