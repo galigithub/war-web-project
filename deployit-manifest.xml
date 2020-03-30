@@ -6,7 +6,9 @@
   </orchestrator>
   <deployables>
     <tomcat.War name="/samplewarapp" file="/SampleWebApp-1.0.0">
-      <tags />
+      <tags>
+        <value>tomcat2</value>
+      </tags>
       <scanPlaceholders>false</scanPlaceholders>
       <preScannedPlaceholders>true</preScannedPlaceholders>
       <placeholders />
